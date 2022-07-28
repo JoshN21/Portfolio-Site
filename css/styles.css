@@ -5,6 +5,7 @@
   /* Yellow */
   --secondary-color: #e0b354;
   --dark-gray: #2b2b2b;
+  --off-white: #edf0f1;
   --visited-link: #05676e;
   --selected-link: #489c79;
   --border-color: rgba(0, 0, 0, 0.3);
@@ -31,26 +32,27 @@ body {
 
 h1 {
   font-size: 30px;
-  font-weight: var(--shared-heading-font-weight: 700);
+  font-weight: var(--shared-heading-font-weight);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--shared-heading-font-weight: 700);
+  font-weight: var(--shared-heading-font-weight);
 }
 
 h3 {
   font-size: 18px;
-  font-weight: var(--shared-heading-font-weight: 700);
+  font-weight: var(--shared-heading-font-weight);
 }
 
+/* Default links */
 a {
   color: var(--primary-color);
 }
 
 a:visited {
   /* visited link*/
-  color: var(--visited-link);
+  color: var(--primary-color);
 }
 
 a:hover, a:focus {
@@ -60,7 +62,7 @@ a:hover, a:focus {
 
 a:active {
   /* selected link*/
-  color: var(--selected-link);
+  color: var(--primary-color);
 }
 
 .button, button {
@@ -102,8 +104,9 @@ button:focus,
 /* Page header including nav logo and nav bar */
 .page-header {
   display: flex;
-  width: 100%;
-  padding: 20px;
+  align-items: center;
+  padding: 0 10px;
+  background-color: var(--dark-gray);
 }
 
 .page-header__item {
@@ -116,21 +119,67 @@ button:focus,
 }
 
 .navigation__logo {
+  font-size: 24px;
+  letter-spacing: 7px;
   top: 20px;
-  left: 20px;
+  margin: 10px auto 10px 20px;
+  cursor: pointer;
+  color: var(--off-white);
 }
 
 .navigation-list {
   list-style-type: none;
+  margin-right: 20px;
+  justify-content: flex-end;
 }
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  padding: 0px 15px;
 }
 
 .navigation-list__item--active {
   text-decoration: none;
+}
+
+/* NAVIGATION LINKS STYLING */
+a.navigation-list__item {
+  color: var(--off-white);
+  text-decoration: none;
+}
+
+a.navigation-list__item:visited {
+  /* visited link*/
+  color: var(--off-white);
+}
+
+a.navigation-list__item:hover, a.navigation-list__item:focus {
+  text-decoration: none;
+  color: white;
+}
+
+a.navigation-list__item:active {
+  /* selected link*/
+  color: var(--off-white);
+}
+
+/* CONTACT BUTTON STYLING */
+#contact-button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--off-white);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--border-color);
+  transition: 0.2s opacity;
+}
+
+#contact-button:hover, focus {
+  cursor: pointer;
+  opacity: 0.8
 }
 /*End of page header including nav logo and nav bar */
 

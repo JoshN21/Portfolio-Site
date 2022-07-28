@@ -9,20 +9,20 @@
   <link rel="favicon" href="img/jn_favicon.png">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 <!--Header including logo and main navigation-->
 <header class="page-header">
   <!--place logo here-->
-  <img src="http://via.placeholder.com/200x70" alt="logo" class="page-header__item">
+  <p class="navigation__logo">Josh Nelson</p>
   <!--nav bar-->
-  <nav class="main-navigation page-header__item">
+  <nav class="main-navigation">
     <ul role="menubar" class="navigation-list">
       <!--Index-->
       <li role="presentation">
-        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
       </li>
       <!--About-->
       <li role="presentation">
@@ -31,9 +31,10 @@
       <!--Work-->
       <li role="presentation">
         <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-      <!--Contact-->
+      </li>
+      <!--ContAct-->
       <li role="presentation">
-        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        <a href="contact.html" role="menuitem" class="navigation-list__item" id=contact-button>Contact</a>
       </li>
     </ul>
   </nav>
@@ -42,15 +43,16 @@
 <main class="profile">
   <!--place self-portrait here-->
   <img src="http://via.placeholder.com/150x150" class="profile__portrait" alt="A photograph of me, Josh Nelson">
-  <h1>Hello world</h1>
+  <h1>Hello</h1>
   <p>
-    My name is Josh Nelson. I am a <span>web</span> developer from the United States.
+    My name is Josh Nelson. I am a <span>web</span> developer from the United States. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare lectus sit amet est placerat. Ultrices eros in cursus turpis. Accumsan in nisl nisi scelerisque. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Cras adipiscing enim eu turpis egestas pretium aenean pharetra. Neque egestas congue quisque egestas diam in. Id aliquet risus feugiat in ante metus dictum at tempor. Aliquam eleifend mi in nulla posuere. Mattis nunc sed blandit libero volutpat sed. Aenean euismod elementum nisi quis. Ornare suspendisse sed nisi lacus sed viverra.
   </p>
   <a href="#">Check out some of my code</a><br>
-  <!--Temporary placeholders-->
+  <!--Temporary placeholders
   <a href="#">Default Link</a>
   <button type="button">Default Button</button>
   <button class="button_secondary">Secondary Button</button>
+  -->
 </main>
 <!--Footer with links to social media profiles-->
 <footer class="page-footer">
