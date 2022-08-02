@@ -169,7 +169,7 @@ a.navigation-list__item:active {
   display: inline-block;
   font-family: inherit;
   background-color: var(--primary-color);
-  color: var(--off-white);
+  color: white;
   text-decoration: none;
   padding: 8px;
   border-radius: 3px;
