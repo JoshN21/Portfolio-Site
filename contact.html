@@ -40,43 +40,36 @@
   </nav>
 </header>
 
-<div>
-  <h1>Contact</h1>
-</div>
+<main class="contact-main">
+  <div>
+    <h1>Contact Me</h1>
+  </div>
 
-<div>
-  <!--My contact info-->
-  <h2>Josh Nelson</h2><br>
-  Tel: <a href="tel:+14255337651">(425)533-7651</a><br>
-  Skype: <a href="skype:JoshN54@gmail.com">Josh Nelson</a><br>
-  Email: <a href="mailto:JoshN54@gmail.com">JoshN54@gmail.com</a>
-</div>
+  <div>
+    <!--My contact info-->
+    Phone: <a href="tel:+14255337651">(425)533-7651</a><br>
+    Email: <a href="mailto:JoshN54@gmail.com">JoshN54@gmail.com</a>
+  </div>
 
-<div>
-  <!--Contact me link-->
-  <a href="mailto:JoshN54@gmail.com">Contact me</a>
-</div>
+  <!--Contact form-->
+  <form action="" method="post" id="contact-form">
+    <!--Name-->
+    <label class="standard-label" for="name">Name*</label><br>
+    <input type="text" id="name" required><br>
+    <!--Email-->
+    <label class="standard-label" for="email">Email*</label><br>
+    <input type"email" id="email" required><br>
+    <!--Telephone-->
+    <label class="standard-label" for="tel">Telephone</label><br>
+    <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
+    <!--Message-->
+    <label class="standard-label" for="message">Message*</label><br>
+    <textarea id="message" maxlength="240" required></textarea><br>
+    <!--Submit button-->
+    <button type="submit" value="Send message">Submit</button>
+  </form>
+</main>
 
-<!--Contact form-->
-<form action="" method="post" id="contact-form">
-  <!--First name-->
-  <label class="standard-label" for="fname">First name:*</label><br>
-  <input type="text" id="fname" required><br>
-  <!--Last name-->
-  <label class="standard-label" for="lname">Last name:*</label><br>
-  <input type="text" id="lname" required><br>
-  <!--Email-->
-  <label class="standard-label" for="email">Email:*</label><br>
-  <input type"email" id="email" required><br>
-  <!--Telephone-->
-  <label class="standard-label" for="tel">Telephone:</label><br>
-  <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
-  <!--Message-->
-  <label class="standard-label" for="message">Message:*</label><br>
-  <textarea id="message" maxlength="240" required></textarea><br>
-  <!--Submit button-->
-  <button type="submit" value="Send message">Submit</button>
-</form>
 <!--Footer with links to social media profiles-->
 <footer class="page-footer">
   <p>

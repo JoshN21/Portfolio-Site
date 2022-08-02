@@ -192,20 +192,16 @@ a.navigation-list__item:active {
 }
 
 /* Main content on index page containing photo & everything else */
-.profile {
+.index-main {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 80px auto;
 }
 
-/* Footer on every page, contains links to social media */
-.page-footer {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 
 /* START OF GRID FOR PROJECTS ON WORK PAGE */
+.work-title {
+  margin-left: 20px;
+}
 
 /* start grid fallback */
 .grid__item {
@@ -219,7 +215,7 @@ a.navigation-list__item:active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    margin:0;
+    margin:20px;
   }
 
   .grid__item {
@@ -262,7 +258,15 @@ a.navigation-list__item:active {
 }
 /* END OF GRID FOR PROJECTS ON WORK PAGE */
 
-/* Animations for image on about page */
+/*berlin pic */
+.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* ANIMATIONS FOR IMAGE ON ABOUT PAGE */
 /* Sun color change keyframe */
 @keyframes color-change {
   0% {
@@ -317,4 +321,25 @@ a.navigation-list__item:active {
 /* Apllies cloud-move keyframe to cloud-back (short way) */
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* Contact page content */
+.contact-main {
+    margin-left: 20px;
+    margin-top: 40px;
+    line-height: 25px;
+}
+
+/* Contact form on contact page */
+#contact-form {
+  margin-top: 40px;
+}
+
+/* Footer on every page, contains links to social media */
+.page-footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 10px 0 10px;
+  width: 100%;
 }
