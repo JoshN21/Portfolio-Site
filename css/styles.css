@@ -357,7 +357,7 @@ a.navigation-list__item:active {
 /* Footer on every page, contains links to social media */
 .page-footer {
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   padding: 10px 10px 0;
   width: 100%;
